@@ -1,16 +1,15 @@
 <template>
   <div>
-    <router-view></router-view>
+    <h1>message</h1>
   </div>
 </template>
 
 <script>
 export default {
-  components:{
-  }
+
 }
 </script>
 
-<style>
+<style scoped> 
 
 </style>
