@@ -23,5 +23,6 @@ jobs:
         git remote add upstream https://github.com/cche0214/My-Vue-project.git
         git fetch upstream
         git checkout main
-        git merge upstream/main --allow-unrelated-histories
-        git push origin main
+        # 使用 'theirs' 策略，强制保留 upstream 的更改
+        git merge -X theirs upstream/main --allow-unrelated-histories
+        git push origin main --force
