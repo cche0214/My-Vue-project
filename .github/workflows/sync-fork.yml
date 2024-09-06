@@ -13,6 +13,11 @@ jobs:
       with:
         ref: main
 
+    - name: Set up Git
+      run: |
+        git config --global user.name "wtmxxx"
+        git config --global user.email "iswotemo@gmail.com"
+
     - name: Sync with upstream
       run: |
         git remote add upstream https://github.com/cche0214/My-Vue-project.git
